@@ -1,0 +1,62 @@
+                body {
+                    font-family: "DM Sans", sans-serif;
+                    margin: 0;
+                }
+                
+                .body {
+                    margin: 0 5%;
+                }
+                
+                a {
+                    text-decoration: none;
+                }
+                
+                header {
+                    display: flex;
+                    justify-content: center;
+                    width: 96%;
+                }
+                
+                .logo {
+                    margin-top: 2rem;
+                    height: 70px;
+                }
+                
+                #search {
+                    width: 96%;
+                    margin: 2rem 0 0 0;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                
+                #form {
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    width: 100%;
+                    background: #e7e7ee;
+                    padding-right: 2rem;
+                }
+                
+                #form input {
+                    padding-left: 2rem;
+                    width: 100%;
+                    height: 3.5rem;
+                    border-radius: 3px;
+                    background-color: #e7e7e7;
+                    border: none;
+                    outline: #ce5052;
+                    font-size: 1.4rem;
+                }
+                
+                #form input::placeholder {
+                    font-size: 1rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                
+                .icon {
+                    font-size: 25px;
+                }
