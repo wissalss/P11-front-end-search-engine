@@ -1,0 +1,76 @@
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 1rem -1rem 0 -1rem;
+}
+
+.carte_recette {
+    height: 33rem;
+    border-radius: 3px;
+    flex-basis: 30%;
+    background-color: #e7e7e7;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.carte_recette img {
+    height: 50%;
+    width: 100%;
+    background-color: #c7bebe;
+    border: none;
+}
+
+.titre_duree {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.titre_duree h1 {
+    width: 70%;
+}
+
+.titre_duree i {
+    margin-right: 5px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.detail_recette {
+    flex-direction: column;
+}
+
+.detail_recette h2 {
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.detail_recette h2 p {
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.detail_commentaire {
+    font-size: 12px;
+    flex-basis: 50%;
+    line-height: 1.3;
+    height: 9rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+}

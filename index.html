@@ -3,15 +3,18 @@
 
 <head>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/cart.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/57ba338bef.js" crossorigin="anonymous"></script>
     <title>Les petits plats</title>
 </head>
 
 <body>
-    <div class="body">
+    <div class="wrapper">
+
         <header>
-            <a href="index.html"><img src="assets/logo.png" class="logo" alt="Les petits plats Home page" tabindex="1" /></a>
+            <a href="index.html"><img src="assets/logo.png" class="logo" alt="Les petits plats Home page" /></a>
         </header>
         <main>
             <section id="search">
@@ -20,16 +23,74 @@
                     <i class="fas fa-search icon"></i>
                 </form>
             </section>
+            <div id="champ_mot_cle">
+                <ul id="tag">
 
-            <section class="searchTags">
-                <div id="ingredients"></div>
-                <div id="appareils"></div>
-                <div id="ustenciles"></div>
+                </ul>
+
+            </div>
+
+            <section class="filtres">
+                <div class="ingredients">
+                    <div class="ingredients_btn">
+                        <h2>Ingredients</h2>
+                        <i class="fas fa-chevron-down" id="ingredients-down"></i>
+                    </div>
+                    <div class="liste_ingredients">
+                        <div class="input_close_ingredients">
+                            <input id="input_ingredients" type="text" placeholder="Rechercher un ingrédient">
+                            <i class="fas fa-chevron-up" id="ingredients-up"></i>
+                        </div>
+                        <div id="ingredients_div">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="appareils">
+                    <div class="appareils_btn">
+                        <h2>Appareils</h2>
+                        <i class="fas fa-chevron-down" id="appareils-down"></i>
+                    </div>
+                    <div class="liste_appareils">
+                        <div class="input_close_appareils">
+                            <input id="input_appareils" type="text" placeholder="Rechercher un appareil">
+                            <i class="fas fa-chevron-up" id="appareils-up"></i>
+                        </div>
+                        <div id="appareils_div">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ustensiles">
+                    <div class="ustensiles_btn">
+                        <h2>Ustensiles</h2>
+                        <i class="fas fa-chevron-down" id="ustensiles-down"></i>
+                    </div>
+                    <div class="liste_ustensiles">
+                        <div class="input_close_ustensiles">
+                            <input id="input_ustensiles" type="text" placeholder="Rechercher un ustensile">
+                            <i class="fas fa-chevron-up" id="ustensiles-up"></i>
+                        </div>
+                        <div id="ustensiles_div">
+
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
 
-            <section id="result"></section>
+
+            <section class="result"></section>
         </main>
+    </div>
+    <script src="data/recipes.js"></script>
+    <script src="script/factoryCarts.js"></script>
+    <script src="script/factoryFilter.js"></script>
+    <script src="script/BarreDerechercheV2.js"></script>
+    <script src="script/index.js"></script>
     </div>
 </body>
 

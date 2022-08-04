@@ -1,62 +1,253 @@
-                body {
-                    font-family: "DM Sans", sans-serif;
-                    margin: 0;
-                }
-                
-                .body {
-                    margin: 0 5%;
-                }
-                
-                a {
-                    text-decoration: none;
-                }
-                
-                header {
-                    display: flex;
-                    justify-content: center;
-                    width: 96%;
-                }
-                
-                .logo {
-                    margin-top: 2rem;
-                    height: 70px;
-                }
-                
-                #search {
-                    width: 96%;
-                    margin: 2rem 0 0 0;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                }
-                
-                #form {
-                    display: flex;
-                    justify-content: center;
-                    align-items: baseline;
-                    width: 100%;
-                    background: #e7e7ee;
-                    padding-right: 2rem;
-                }
-                
-                #form input {
-                    padding-left: 2rem;
-                    width: 100%;
-                    height: 3.5rem;
-                    border-radius: 3px;
-                    background-color: #e7e7e7;
-                    border: none;
-                    outline: #ce5052;
-                    font-size: 1.4rem;
-                }
-                
-                #form input::placeholder {
-                    font-size: 1rem;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                
-                .icon {
-                    font-size: 25px;
-                }
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    cursor: default;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    color: black;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 0 5%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+}
+
+.logo {
+    margin-top: 2rem;
+    height: 70px;
+}
+
+#search {
+    width: 96%;
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    background: #e7e7ee;
+    padding-right: 2rem;
+}
+
+#form input {
+    padding-left: 2rem;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 3px;
+    background-color: #e7e7e7;
+    border: none;
+    outline: #ce5052;
+    font-size: 1.4rem;
+}
+
+#form input::placeholder {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.filtres {
+    display: flex;
+    height: 50px;
+    width: 50%;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.ingredients,
+.appareils,
+.ustensiles {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.ingredients_btn,
+#input_ingredients,
+#ingredients_div,
+.input_close_ingredients {
+    background-color: #3282F7;
+    padding: 1rem 2rem;
+}
+
+.appareils_btn,
+#input_appareils,
+#appareils_div,
+.input_close_appareils {
+    background-color: #68D9A4;
+    padding: 1rem 2rem;
+}
+
+.ustensiles_btn,
+#input_ustensiles,
+#ustensiles_div,
+.input_close_ustensiles {
+    background-color: #ED6454;
+    padding: 1rem 2rem;
+}
+
+.ingredients_btn,
+.appareils_btn,
+.ustensiles_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 50px;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.liste_ingredients,
+.liste_appareils,
+.liste_ustensiles {
+    width: 40%;
+    height: 500px;
+    position: absolute;
+    border-radius: 5px;
+    display: none;
+}
+
+.input_close_ingredients,
+.input_close_appareils,
+.input_close_ustensiles {
+    height: 50px;
+    width: 80%;
+    border-radius: 5px 5px 0 0;
+}
+
+#input_ingredients,
+#input_appareils,
+#input_ustensiles {
+    width: 87%;
+    height: 40px;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border: #3282F7;
+    font-size: 18px;
+    color: white;
+}
+
+#ingredients-down,
+#appareils-down,
+#ustensiles-down {
+    padding: 1rem;
+}
+
+.menu_recherche i {
+    color: white;
+    cursor: pointer;
+}
+
+#ingredients_div,
+#appareils_div,
+#ustensiles_div {
+    width: 80%;
+    height: auto;
+    border-radius: 0 0 5px 5px;
+    column-count: 3;
+    column-width: 20%;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#ingredients li,
+#appareils li,
+#ustensiles li {
+    color: white;
+    width: 100%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    list-style-type: none;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.li_ingredients {
+    background-color: #3282F7;
+}
+
+.li_appareils {
+    background-color: #68D9A4;
+}
+
+.li_ustensiles {
+    background-color: #ED6454;
+}
+
+#tag {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#tag li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: auto;
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#tag span {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+    height: 30px;
+    list-style-type: none;
+}
+
+#tag i {
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
