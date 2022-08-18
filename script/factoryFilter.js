@@ -58,7 +58,7 @@ function filtreBtn(tabTag, id) {
     const inputBarre = inputBtn.value;
 
     if (inputBarre.length >= 1) {
-        const resultFiltre = tabTag.filter(el => el.toLowerCase().startsWith(inputBarre.toLowerCase()));
+        const resultFiltre = tabTag.filter(el => el.toLowerCase().includes(inputBarre.toLowerCase()));
 
         suggestion = "";
         resultFiltre.forEach(el =>
