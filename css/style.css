@@ -86,7 +86,7 @@ header {
     height: 50px;
     width: 50%;
     justify-content: flex-start;
-    margin-top: 20px;
+    margin-top: 0.5rem;
 }
 
 .ingredients,
@@ -102,7 +102,7 @@ header {
 #ingredients_div,
 .input_close_ingredients {
     background-color: #3282F7;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 1rem 3rem;
 }
 
 .appareils_btn,
@@ -110,7 +110,7 @@ header {
 #appareils_div,
 .input_close_appareils {
     background-color: #68D9A4;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 1rem 3rem;
 }
 
 .ustensiles_btn,
@@ -118,7 +118,7 @@ header {
 #ustensiles_div,
 .input_close_ustensiles {
     background-color: #ED6454;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 1rem 3rem;
 }
 
 .ingredients_btn,
@@ -220,8 +220,8 @@ header {
     display: flex;
     align-items: center;
     width: 90%;
-    height: 50px;
-    margin-top: 20px;
+    height: 35px;
+    margin-top: 0.5rem;
 }
 
 #tag li {
@@ -240,8 +240,7 @@ header {
     align-items: center;
     color: white;
     margin-left: 10px;
-    font-size: 18px;
-    height: 30px;
+    font-size: 12px;
     list-style-type: none;
 }
 
